@@ -11,9 +11,10 @@ describe('Add todo', function () {
     it('Remove a todo in the list', function () {
         cy.addNewToDo("First")
         cy.get('.todo-count').should('be.visible')
+        cy.get('.todo-list').should('exist')
         cy.removeFirstToDoInTheList()
         cy.get('.destroy').should('not.exist')
-        cy.get('.todo-count').should('not.exist')
+        cy.get('.todo-list').should('not.exist')
     })
 
     it('Edit a todo', function () {
@@ -23,7 +24,7 @@ describe('Add todo', function () {
         cy.get('label').should('have.text', "Todo" + " edited")
     })
 
-    it('Mark todo as completed>', function () {
+    it('Mark todo as completed', function () {
         cy.addNewToDo("Todo")
         cy.get('.toggle').check()
         cy.get('li').should('have.class', 'completed')
