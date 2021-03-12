@@ -1,4 +1,5 @@
 ##The approach
+
 The project is organized:
 Specs - the tests. I like to call them specs as they are specifying the actual specification (behavior)
 shared - using custom commands for repetitive functionalities. Indeed, it’s a small project, but I wanted to express that we can use custom commands for steps like these.
