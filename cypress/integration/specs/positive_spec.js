@@ -4,7 +4,7 @@ describe('Add todo', function () {
     })
 
     it('Add new todo in the list', function () {
-        cy.addNewToDo("New to do text called like this")
+        cy.addNewToDo("Todo")
         cy.get('.todo-count').should('be.visible')
     })
 

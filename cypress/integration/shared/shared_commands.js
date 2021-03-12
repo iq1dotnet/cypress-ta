@@ -1,5 +1,5 @@
-Cypress.Commands.add('addNewToDo', (todoTitle) => {
-    cy.get('.new-todo').focus().click().type(todoTitle+ '{enter}')
+Cypress.Commands.add('addNewToDo', (data) => {
+    cy.get('.new-todo').focus().click().type(data + '{enter}')
 })
 
 Cypress.Commands.add('removeFirstToDoInTheList', () => {

@@ -1,3 +1,8 @@
+##The approach
+The project is organized:
+
+
+
 ## Test cases:
 
 ###Positive scenarios
