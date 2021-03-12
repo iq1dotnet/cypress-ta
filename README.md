@@ -18,7 +18,7 @@ The assertion is based on what we have. The app itself does not have data-test p
 
 Of course, in order to run the tests, you need to start Cypress, running the command “Cypress open” with in elevated terminal
 (but you already know that). 
-Anyway, as this is a task, here is the documentation which can be used in order for the tests to be spun
+The documentation which can be used in order for the tests to be spun
 https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
 
 I want to mention that every test automation framework I have designed so far uses different approaches which is defined of the nature of the application.
