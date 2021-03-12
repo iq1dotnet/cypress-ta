@@ -1,8 +1,8 @@
 ##The approach
 
 The project is organized:
-specs - the tests. I like to call them specs as they are specifying the actual specification (behavior)
-shared - using custom commands for repetitive functionalities. 
+- specs - the tests. I like to call them specs as they are specifying the actual specification (behavior)
+- shared - using custom commands for repetitive functionalities. 
 Indeed, it’s a small project, we can use custom commands for steps like these.
 Mostly I am using custom commands for api calls for login and logout, so my tests will look cleaner, the outcome will be focused only on the thing we actually test. 
 (I wanted to explain this as we know that Cypress best practices are against reusing page objects)
