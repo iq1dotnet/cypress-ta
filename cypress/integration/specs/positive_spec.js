@@ -4,7 +4,10 @@ describe('Add todo', function () {
     })
 
     it('Add new todo in the list', function () {
-        cy.addNewToDo("Todo")
+        //example of using fixture to add data
+        cy.fixture("testdata.json").then((data) => {
+            cy.addNewToDo(data.todoName)
+        });
         cy.get('.todo-count').should('be.visible')
     })
 

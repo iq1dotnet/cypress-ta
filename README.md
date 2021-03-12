@@ -1,7 +1,28 @@
 ##The approach
 The project is organized:
+Specs - the tests. I like to call them specs as they are specifying the actual specification (behavior)
+shared - using custom commands for repetitive functionalities. Indeed, it’s a small project, but I wanted to express that we can use custom commands for steps like these.
+Mostly I am using custom commands for api calls for login and logout, so my tests will look cleaner, the outcome will be focused only on the thing we actually test. 
+(I wanted to explain this as we know that Cypress best practices are against reusing page objects)
 
+I have two sets of tests, which cover positive and negative scenarios.
+In some of them I used fixture in order to fetch data from a datasource and in some I used the straight forward way of passing the data.
+Both ways can be used depending on the situation and what we need to achieve.
 
+I personally prefer clean tests, but I do not relay strictly on DRY as some times it's better to implement something in simple way, 
+than spend a huge amount of time making it generic, just to see that at the end you would do much better having it simple enough (KISS).
+
+The assertion is based on what we have. The app itself does not have data-test properties, so I used what I thought it’s the best. 
+(Of course It can be improved, but what can't? 😊 )
+
+Of course, in order to run the tests, you need to start Cypress, running the command “Cypress open” with in elevated terminal
+(but you already know that). 
+Anyway, as this is a task, here is the documentation which can be used in order for the tests to be spun
+https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
+
+I want to mention that every test automation framework I have designed so far uses different approaches which is defined of the nature of the application.
+
+That’s all I can say about the solution.
 
 ## Test cases:
 
